@@ -95,43 +95,44 @@ if selected == 'Heart Disease Prediction':
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        age = st.text_input('Age')
-
+        age = st.text_input('Age', value='63')
+    
     with col2:
-        sex = st.text_input('Sex')
-
+        sex = st.text_input('Sex', value='1')
+    
     with col3:
-        cp = st.text_input('Chest Pain types')
-
+        cp = st.text_input('Chest Pain types', value='3')
+    
     with col1:
-        trestbps = st.text_input('Resting Blood Pressure')
-
+        trestbps = st.text_input('Resting Blood Pressure', value='145')
+    
     with col2:
-        chol = st.text_input('Serum Cholestoral in mg/dl')
-
+        chol = st.text_input('Serum Cholestoral in mg/dl', value='233')
+    
     with col3:
-        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl')
-
+        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl', value='1')
+    
     with col1:
-        restecg = st.text_input('Resting Electrocardiographic results')
-
+        restecg = st.text_input('Resting Electrocardiographic results', value='0')
+    
     with col2:
-        thalach = st.text_input('Maximum Heart Rate achieved')
-
+        thalach = st.text_input('Maximum Heart Rate achieved', value='150')
+    
     with col3:
-        exang = st.text_input('Exercise Induced Angina')
-
+        exang = st.text_input('Exercise Induced Angina', value='0')
+    
     with col1:
-        oldpeak = st.text_input('ST depression induced by exercise')
-
+        oldpeak = st.text_input('ST depression induced by exercise', value='2.3')
+    
     with col2:
-        slope = st.text_input('Slope of the peak exercise ST segment')
-
+        slope = st.text_input('Slope of the peak exercise ST segment', value='0')
+    
     with col3:
-        ca = st.text_input('Major vessels colored by flourosopy')
-
+        ca = st.text_input('Major vessels colored by flourosopy', value='0')
+    
     with col1:
-        thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
+        thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect', value='1')
+
 
     # code for Prediction
     heart_diagnosis = ''
